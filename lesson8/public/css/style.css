@@ -1,0 +1,507 @@
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+h2, h3 {
+    text-align: center;
+}
+
+input[type='text'], input[type='email'], input[type='password'] {
+    box-sizing: border-box;
+    padding: 7px 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type='submit'] {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.wrapper-small {
+    width: 400px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------------------------*/
+/*                           МЕНЮ                           */
+/*----------------------------------------------------------*/
+
+.menu {
+    padding: 10px 7px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    margin: 25px 0;
+}
+.menu li {
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+}
+
+.menu a:hover {
+    color: #212121;
+}
+.menu .logout, .menu .nick, .menu .auth {
+    text-transform: lowercase;
+}
+
+/*----------------------------------------------------------*/
+/*                      КАТАЛОГ ТОВАРОВ                     */
+/*----------------------------------------------------------*/
+
+.catalog {
+    border: 1px dashed #999;
+    padding: 20px 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 176px;
+    height: 380px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title,
+.price {
+    font-weight: bold;
+    color: #555;
+}
+
+.title {
+    margin: 15px 0 10px;
+    height: 36px;
+}
+
+.price {
+    margin: 10px 0 15px;
+    font-size: 1.2em;
+}
+
+.price span {
+    font-weight: normal;
+}
+
+.catalog img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------*/
+/*                      ДОБАВИТЬ ТОВАР                      */
+/*----------------------------------------------------------*/
+
+.addProduct {
+    width: 300px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.addProduct input {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+.addProduct textarea {
+    resize: none;
+    width: 100%;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+
+}
+
+.addProduct input[type='text'] {
+    padding: 7px 10px;
+    width: 100%;
+}
+.addProduct input[type='file'] {
+    width: 100%;
+}
+.addProduct input[type='submit'] {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------*/
+/*                      СТРАНИЦА ТОВАРА                     */
+/*----------------------------------------------------------*/
+
+.selectedItem {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+.selectedItem .title, .selectedItem .price, .selectedItem .description {
+    text-align: center;
+}
+.selectedItem img {
+    width: 100%;
+}
+
+.selectedItem .description {
+    margin-bottom: 25px;
+}
+
+.feedback {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.feedback input[type='text'], .feedback textarea {
+    box-sizing: border-box;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+}
+.feedback input[type='text'] {
+    width: 50%;
+}
+.feedback textarea {
+    resize: none;
+    width: 100%;
+    font-size: 1.2em;
+}
+.feedback input[type='submit'] {
+    padding: 5px 10px;
+    color: #212121;
+    cursor: pointer;
+}
+
+.reviews p {
+    font-size: 1.2em;
+}
+.reviews p:first-of-type {
+    font-style: italic;
+}
+
+.reviews p:first-of-type:first-letter {
+    text-transform: uppercase;
+}
+.addToCart {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #ff0b73cf;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.addToCart:hover {
+    background-color: #ff0b73;
+}
+/*----------------------------------------------------------*/
+/*                      КАЛЬКУЛЯТОР                         */
+/*----------------------------------------------------------*/
+
+.calculator {
+    width: 360px;
+    margin: 0 auto;
+    padding: 1%;
+
+}
+
+.calculator form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.calculator input[type="text"] {
+    width: 100%;
+    padding: 0.5em 1em;
+}
+
+.calculator div {
+    margin-top: 5%;
+    padding: 5%;
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calculator,
+.calculator div {
+    border: 1px solid gray;
+}
+
+.calculator div:hover {
+    color: orange;
+}
+
+.calculator div:active {
+    background-color: gray;
+}
+
+.calculator,
+.calculator input[type="text"] {
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.calculator input[type="text"],
+.calculator div {
+    font-size: 1.5em;
+}
+
+/*----------------------------------------------------------*/
+/*                     ЛИЧНЫЙ КАБИНЕТ                       */
+/*----------------------------------------------------------*/
+
+.wrapper-personal {
+ 
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.personal {
+    padding: 17px 0 20px 0;
+    display: flex;
+}
+
+.personal-menu {
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 180px;
+    
+    border-radius: 5px;
+    padding: 0;
+    margin: 0 20px 0 0;
+    
+}
+.personal-menu li {
+    border-radius: 5px;
+    padding: 10px 7px;
+    border: 1px solid gray;
+    list-style-type: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.personal-menu li:last-of-type {
+    margin-bottom: 0;
+}
+
+.personal-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+}
+
+.personal-menu a:hover {
+    color: #212121;
+}
+
+.personal-content {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    }
+
+/*----------------------------------------------------------*/
+/*                     ПОЛЬЗОВАТЕЛИ                         */
+/*----------------------------------------------------------*/
+
+.users {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users tr:first-of-type {
+    font-weight: bold;
+}
+.users td {
+    padding: 10px 7px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.users a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.users .good {
+    color: #03d214;
+}
+.users .bad {
+    color: #ff008b;
+}
+
+/*----------------------------------------------------------*/
+/*                         КОРЗИНА                          */
+/*----------------------------------------------------------*/
+
+.cart {
+    font-size: 1.2em;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.cart tr:first-of-type {
+    font-weight: bold;
+}
+
+.cart td {
+    padding: 10px 7px;
+    text-align: center;
+    /*border-top: 1px solid gray;*/
+    border-bottom: 1px solid gray;
+ }
+.cart tr td:first-of-type a {
+    color: darkred;
+}
+
+.cart img {
+    width: 100px;
+}
+
+.cart a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    display: block;
+}
+.total {
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.total span {
+    font-weight: bold;
+}
+
+/*----------------------------------------------------------*/
+/*                         ЗАКАЗ                            */
+/*----------------------------------------------------------*/
+
+.toOrder {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.toOrder input[type='text'], .toOrder textarea {
+    box-sizing: border-box;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+}
+.toOrder input[type='text'] {
+    width: 100%;
+}
+.toOrder textarea {
+    resize: none;
+    width: 100%;
+    font-size: 1.2em;
+}
+.toOrder input[type='submit'] {
+    padding: 5px 10px;
+    color: #212121;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------*/
+/*                       АДМИНКА-ТОВАРЫ                     */
+/*----------------------------------------------------------*/
+
+
+.products {
+    font-size: 1.1em;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.products tr:first-of-type {
+    font-weight: bold;
+}
+
+.products td {
+    padding: 10px 7px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.products tr td:first-of-type {
+    border-bottom: none;
+}
+
+.products tr td:first-of-type a {
+    color: darkred;
+}
+
+.products img {
+    width: 70px;
+}
+
+.products a {
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    display: block;
+}
+
+/*----------------------------------------------------------*/
+/*                     ИЗМЕНЕНИЕ ТОВАРА                     */
+/*----------------------------------------------------------*/
+
+.editImg {
+    width: 240px;
+    margin-bottom: 20px;
+}
+
+/*----------------------------------------------------------*/
+/*                          ЗАКАЗЫ                          */
+/*----------------------------------------------------------*/
+.order {
+    margin-bottom: 20px;
+}
+
+.order .info {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.order p span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.order .statusChange {
+    text-decoration: none;
+    color: #03d214;
+    font-weight: bold;
+    padding: 10px;
+}
+.order .statusChange:hover {
+    color: #ff008b;;
+}
+
+/*----------------------------------------------------------*/
+/*                          ОТЗЫВЫ                          */
+/*----------------------------------------------------------*/
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Довабление товара</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper-personal">
+    <div class="personal">
+        {MENU}
+        <div class="personal-content">
+
+            <h2>Добавить товар</h2>
+
+            <form method="post" action="?page=addProduct&action=addProduct" enctype="multipart/form-data" class="addProduct">
+                <input name="title" type="text" placeholder="название товара">
+                <input name="userfile" type="file">
+                <input name="price" type="text" placeholder="цена товара">
+                <textarea name="description" id="" rows="3" placeholder="описание товара..."></textarea>
+                <input type="submit" value="Добавить товар" >
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

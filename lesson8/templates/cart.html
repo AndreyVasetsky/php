@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    {MENU}
+    <h2>Корзина</h2>
+    <table class="cart">
+        <tr>
+            <td>удаление</td>
+            <td>фото</td>
+            <td>цена за шт</td>
+            <td>название</td>
+            <td>кол-во</td>
+            <td>изменить</td>
+            <td>цена общая</td>
+        </tr>
+        {CART}
+    </table>
+    <div class="total">Итого: <span>{TOTAL}</span> ₽</div>
+    <a class="addToCart" href="?page=toOrder">Оформить заказ</a>
+
+</div>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+</body>
+</html>

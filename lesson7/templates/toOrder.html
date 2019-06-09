@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    {MENU}
+    <h2>Оформление заказа</h2>
+    <form method="post" action="?page=toOrder&action=checkout" class="toOrder">
+        <input name="deliveryAddress" type="text" placeholder="Адрес доставки">
+        <textarea name="comment" id="" rows="3" placeholder="комментарий к заказу..."></textarea>
+        <input type="submit" value="Оформить заказ">
+    </form>
+</div>
+
+</body>
+</html>

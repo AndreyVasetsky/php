@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница аутентификации</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="wrapper-small">
+    <h2>Форма входа на сайт</h2>
+
+    <form method="post" action="?page=authentication&action=authentication">
+        <input name="email" type="email" placeholder="адрес электронной почты">
+        <input name="password" type="password" placeholder="пароль">
+        <input type="submit" value="Войти">
+    </form>
+    <a href="?page=registration">зарегистрироваться</a><br><br>
+<!--    <a href="?action=logout">выйти</a>-->
+</div>
+
+</body>
+</html>

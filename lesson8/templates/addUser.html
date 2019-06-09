@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление пользователя</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper-personal">
+    <div class="personal">
+        {MENU}
+        <div class="personal-content">
+            <div class="wrapper-small">
+                <h2>Добавить пользователя</h2>
+                <form method="post" action="?page=addUser&action=toRegister">
+                    <input name="nickName" type="text" placeholder="прозвище на сайте">
+                    <input name="email" type="email" placeholder="адрес электронной почты">
+                    <input name="password" type="password" placeholder="пароль">
+                    <input type="submit" value="Добавить в базу данных">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

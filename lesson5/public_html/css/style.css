@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    width: 570px;
+    margin: 0 auto;
+}
+
+.gallery {
+    border: 1px dashed #999;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 150px;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
